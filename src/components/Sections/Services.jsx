@@ -21,7 +21,9 @@ export default function Services() {
       <div className="whiteBg" style={{ padding: "60px 0" }}>
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Data Monetization</h1>
+            <h1 className="font40 extraBold">
+              Data Monetization within your reach
+            </h1>
             <p className="font13">
               Our Data Consulting advisory to guide your monetization journey.
             </p>
@@ -31,27 +33,21 @@ export default function Services() {
               <ServiceBox
                 icon="monitorBlue"
                 title="What we do?"
-                subtitle="Our Data Solutions will become a leading online enabler of
-                transparency and accuracy; marrying video, audio, and textual data to
-                provide clarity and insight for related interactions, wherever possible."
+                subtitle="Our Data Solutions will enable transparency and accuracy; assembling video, audio, textual and tabular data to provide perspective for related interactions. Our Data Consulting advisory will guide your data monetization journey with your data."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="monitor"
                 title="Why we do it?"
-                subtitle="Overcome the obstacles residing in your company prevent
-                value from data. Increase customer engagement, de-escalate negative
-                interactions with customer via contact centers and build insights from sentiment analysis."
+                subtitle="You can overcome the obstacles residing in your company preventing you from getting value from your data. You can increase customer engagement, de-escalate negative interactions with customers via contact centers and build insights from sentiment analysis."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="monitorPurple"
                 title="How we do it?"
-                subtitle="Analyzes speech, objects, and other data elements to detect
-                emotions, speech patterns, text, and other sentiments using artificial
-                intelligence and deep machine learning."
+                subtitle="Analyze speech, objects, text, and other data elements to detect emotions, speech patterns and other sentiments using textual analytics, artificial intelligence and deep machine learning."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>

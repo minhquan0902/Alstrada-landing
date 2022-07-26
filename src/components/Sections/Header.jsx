@@ -16,10 +16,20 @@ export default function Header() {
         <div>
           <h1 className="extraBold font60">Welcome to a new dawn of data</h1>
           <HeaderP className="font13 semiBold">
-            Our Data Solutions will become a leading online enabler of
-            transparency and accuracy; marrying video, audio, and textual data
-            to provide clarity and insight for related interactions, wherever
-            possible.
+            The biggest threat for you to make money with your data, resides
+            inside your company!
+            <ol style={{ marginLeft: "20px" }}>
+              <li>1. Your employees don't know how to manage it</li>
+              <li>2. Your systems are blocking it</li>
+              <li>3. Your leaders are unable to squeeze value out of it</li>
+              <li>
+                4. Your operations, growth and innovation strategies don't tap
+                it
+              </li>
+              <li>
+                5. Your vendors offer antiquated solutions and under serving it
+              </li>
+            </ol>
           </HeaderP>
 
           <BtnWrapper>

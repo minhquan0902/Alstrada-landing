@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
+import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
+
 // // Assets
 // import ContactImg1 from "../../assets/img/contact-1.png";
 // import ContactImg2 from "../../assets/img/contact-2.png";
@@ -7,6 +10,31 @@ import styled from "styled-components";
 // import contact2Resize from "../../assets/img/contact-2-resize.jpg";
 
 export default function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_57ldj8c",
+        "template_nq8xymi",
+        form.current,
+        "user_YrhKBNCv35pNFvSu4uJls"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Email Sent Successfully");
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error(`error: ${error.text}`);
+        }
+      );
+
+    e.target.reset();
+  };
   return (
     <Wrapper id="contact">
       <div className="lightBg">
@@ -27,7 +55,7 @@ export default function Contact() {
           </div>
           <div className="row" style={{ paddingBottom: "30px" }}>
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <Form>
+              <Form ref={form} onSubmit={sendEmail}>
                 <label className="font13">First name:</label>
                 <input
                   type="text"
@@ -57,22 +85,20 @@ export default function Contact() {
                   name="message"
                   className="font20 extraBold"
                 />
+
+                <ButtonInput
+                  type="submit"
+                  value="Send Message"
+                  className="pointer animate radius8"
+                  style={{ maxWidth: "220px", textAlign: "center" }}
+                />
               </Form>
-              <div style={{ textAlign: "center" }}>
-                <SumbitWrapper className="flex">
-                  <ButtonInput
-                    type="submit"
-                    value="Send Message"
-                    className="pointer animate radius8"
-                    style={{ maxWidth: "220px", textAlign: "center" }}
-                  />
-                </SumbitWrapper>
-              </div>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex"></div>
           </div>
         </div>
       </div>
+      <Toaster />
     </Wrapper>
   );
 }
@@ -107,12 +133,12 @@ const Form = styled.form`
   }
 `;
 const ButtonInput = styled.input`
-  border: 1px solid #7620ff;
-  background-color: #7620ff;
+  border: 1px solid #580cd2;
+  background-color: #580cd2;
   width: 100%;
   padding: 15px;
   outline: none;
-  color: #fff;
+  color: #000000;
   :hover {
     background-color: #580cd2;
     border: 1px solid #7620ff;

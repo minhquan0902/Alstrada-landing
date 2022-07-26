@@ -17,7 +17,7 @@ export default function Blog() {
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <BlogBox
                 title="Readiness"
-                text="The business represented in data relationships in context"
+                text="Enterprise Ready - business represented in data relationships in context "
                 tag="Enterprise Ready"
               />
             </div>
@@ -32,18 +32,18 @@ export default function Blog() {
 
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <BlogBox
-                title="Cycle"
-                text="Drastically accelerated development cycle"
-                tag="development cycle"
+                title="Performance"
+                text="From Minutes-to-milliseconds with quality"
+                tag="Fast"
               />
             </div>
           </div>
           <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <BlogBox
-                title="Performance"
-                text="From Minutes-to-milliseconds with quality "
-                tag="fast"
+                title="Cycle"
+                text="Drastically accelerated development cycle for businesses"
+                tag=" Accelerated Development Cycle"
               />
             </div>
           </div>

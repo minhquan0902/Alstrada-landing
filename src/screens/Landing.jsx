@@ -8,7 +8,7 @@ import Blog from "../components/Sections/Blog";
 // import Pricing from "../components/Sections/Pricing";
 import Contact from "../components/Sections/Contact";
 import Footer from "../components/Sections/Footer";
-import Pricing from "../components/Sections/Pricing";
+// import Pricing from "../components/Sections/Pricing";
 
 export default function Landing() {
   return (

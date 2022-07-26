@@ -4,7 +4,7 @@ import styled from "styled-components";
 import ProjectBox from "../Elements/ProjectBox";
 // import FullButton from "../Buttons/FullButton";
 // Assets
-import FullButton from "../Buttons/FullButton";
+// import FullButton from "../Buttons/FullButton";
 import Project1Resize from "../../assets/img/projects/project-1-update-1.jpg";
 import Project3Resize from "../../assets/img/projects/project-4-update.jpg";
 import Project5Resize from "../../assets/img/projects/project-5-resize.jpg";
@@ -142,11 +142,11 @@ const Advertising = styled.div`
     margin: 80px 0 0px 0;
   }
 `;
-const ButtonsRow = styled.div`
-  @media (max-width: 860px) {
-    justify-content: space-between;
-  }
-`;
+// const ButtonsRow = styled.div`
+//   @media (max-width: 860px) {
+//     justify-content: space-between;
+//   }
+// `;
 const AddLeft = styled.div`
   position: relative;
   width: 50%;
